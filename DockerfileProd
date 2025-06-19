@@ -1,0 +1,12 @@
+#https://spring.io/guides/gs/spring-boot-docker
+FROM openjdk:25-jdk-slim-bullseye
+
+RUN groupadd -g 1234 uself
+RUN useradd -m -u 1234 -g uself uself
+
+USER uself:uself
+ARG DEPENDENCY=build/dependency
+COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY ${DEPENDENCY}/META-INF /app/META-INF
+COPY ${DEPENDENCY}/BOOT-INF/classes /app
+ENTRYPOINT ["java","-cp","app:app/lib/*","com.eviden.bds.rd.uself.agent.AgentApplicationKt"]

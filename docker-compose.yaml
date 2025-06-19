@@ -1,0 +1,14 @@
+services:
+  redis:
+    container_name: uself-redis-test
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data_test:/data
+volumes:
+  redis_data_test:
+networks:
+  uself-net:
+    driver: bridge
+

@@ -1,0 +1,164 @@
+
+server:
+  port: 8888
+  connection-timeout: 5s
+  max-http-request-header-size: 2MB
+  tomcat:
+    threads.max: 200
+    max-swallow-size: 2MB
+    max-http-post-size: 2MB
+
+master:
+  key:
+    # key for encryption, it must be 32 bytes and then encoded to Base64
+    kms: "LWlVT0IzR21XJlxvJVprYXUkV1FEOEdlLEZBV1kidXA="
+uself:
+  security:
+    basic:
+      username: uself-agent
+      password: uself-agent-password
+  version: v0.1.0
+  loadDir: data/
+  did:
+    # defining did method     DID_KEY_P256, DID_KEY_ED25519,   DID_JWK,  DID_WEB,    DID_EBSI_LEGAL_ENTITY, DID_EBSI_LEGAL_ENTITY_PRELOADED, DID_EBSI_NATURAL_PERSON, DID_EBSI_LEGAL_ENTITY_PARAM
+    method: DID_EBSI_LEGAL_ENTITY_PRELOADED
+  tir:
+    id: did:ebsi:ztRoYyJNdGr8tmAtVh9cg9n
+    sigkey: '<>'
+    ethkey: '<>'
+    #sigkey: '{"kid": "5FN5QgR2jOw7QDqp_2GsRlzpAFib8l3UA34dFH7gY4I", "kty": "EC","alg":"ES256", "crv": "P-256","x": "53fxAncDcRfEW5R_mzgi80UrwG_R9elH1H3GORLKy0E","y": "HvK8UdAIUgm8G4TaLB6z2ChYxe6xT2AWy_QksZxAW6c", "d": "zApC4UwuFW6redzQwfPAnL39P6dki5uwDH7M505qcDc"}'
+    #ethkey: '{ "kid": "NDXx9cr3aWeAfE9kKgP1swvJbyOwhSVrITHcggADx2M","kty": "EC","alg":"ES256K","crv": "secp256k1","x": "pcFusq7ky9dKbnkgIX1XnVSGXbYPL7OOoJD5nxCMYzs","y": "gkkfSTrm4dEO3OatIsAyq0mkh9YU8b5VBvGdlU__buY","d": "maWxZMGHtCmisVVn7zow7yevSUsXS_zi5M5kSXnCNVc"}'
+
+
+
+
+  # ebsiCredential, ebsiAccreditation, dc4eu,
+  preload: ebsiCredential,ebsiAccreditation,dc4eu
+
+
+  server: http://localhost:8888
+  #server:  https://e962-93-156-195-6.ngrok-free.app
+  authentic-source-url: http://uself-authentic-source.localhost/api
+  authentic-source-cylcomed-url: http://uself-authentic-source.localhost/api/cylcomed
+
+  #server issuer
+  issuer: https://uself-file-server.dev5.ari-bip.eu
+  # openid client configuration
+  openid-idp-server: http://uself-keycloak/realms/uself-issuer
+  openid-client-id: uself-issuer-agent-client
+  openid-client-secret: G0G9t0fCYk8delDoMgDTi65sbtkGgap5
+  openid-client-gui: http://uself-agent-web:4200/present
+  openid-client-provider: uself
+  openid-client-token: http://keycloak:8080/realms/master/broker/uself/token
+
+  schemaExceptions: https://api-pilot.ebsi.eu/trusted-schemas-registry/v3/schemas/z5P8ebAhZjuvypiSXSHoba6vstbhTwnLhVuULWKenuiNJ
+
+  #openid-idp-server: https://devtest2-auth.my.evidian.com/pxpadmin/trust_auth/login?client_name=Uself
+  #openid-client-id: uself_agent_client
+  #openid-client-secret: YTz23Dl8kSu4IGoML1aXd1vVeyGOVcEr
+  #openid-client-gui: http://uself-agent-web:4200/present
+  #openid-client-provider: uself
+  #openid-client-token:  http://keycloak:8080/realms/master/broker/uself/token
+
+
+  ebsiApis:
+    # Conformance test environment
+#    serverURL: https://api-conformance.ebsi.eu
+#    didRegURL: https://api-conformance.ebsi.eu/did-registry/v5
+#    trustedIssuersURL: https://api-conformance.ebsi.eu/trusted-issuers-registry/v5
+#    ledgerURL: https://api-conformance.ebsi.eu/ledger/v4/blockchains/besu
+#    identifiersURL: https://api-conformance.ebsi.eu/did-registry/v5/identifiers
+#    issuerURL: https://api-conformance.ebsi.eu/conformance/v3/issuer-mock
+#    authURL: https://api-conformance.ebsi.eu/conformance/v3/auth-mock
+#    authzURL: https://api-conformance.ebsi.eu/authorisation/v4
+#    presentationDefinitionURL: https://api-conformance.ebsi.eu/authorisation/v4/presentation-definitions
+#    tokenURL: https://api-conformance.ebsi.eu/authorisation/v4/token
+#    initiateURL: https://api-conformance.ebsi.eu/conformance/v3/issuer-mock/initiate-credential-offer
+    # testing
+
+  # Pilot environment
+    serverURL: https://api-pilot.ebsi.eu
+    didRegURL: https://api-pilot.ebsi.eu/did-registry/v5
+    trustedIssuersURL: https://api-pilot.ebsi.eu/trusted-issuers-registry/v5
+    ledgerURL: https://api-pilot.ebsi.eu/ledger/v4/blockchains/besu
+    identifiersURL: https://api-pilot.ebsi.eu/did-registry/v5/identifiers
+    issuerURL: https://api-pilot.ebsi.eu/conformance/v3/issuer-mock
+    authURL: https://api-pilot.ebsi.eu/conformance/v3/auth-mock
+    authzURL: https://api-pilot.ebsi.eu/authorisation/v4
+    presentationDefinitionURL: https://api-pilot.ebsi.eu/authorisation/v4/presentation-definitions
+    tokenURL: https://api-pilot.ebsi.eu/authorisation/v4/token
+    initiateURL: https://api-pilot.ebsi.eu/conformance/v3/issuer-mock/initiate-credential-offer
+
+
+spring:
+  data:
+    redis:
+      host: localhost
+      #host: localhost
+      port: 6379
+
+#  datasource:
+#    driverClassName: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/uself_issuer_db
+#    username: postgres
+#    password: postgres
+
+  h2:
+    console.enabled: true
+  datasource:
+    # For in memory database (it is destroy each time)
+    url: jdbc:h2:mem:mydb
+    # For in file database (it is destroy each time)
+    #url: jdbc:h2:file:/tmp/data/uself-agent;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE #AUTO_RECONNECT=TRUE;DB_CLOSE_ON_EXIT=FALSE   # persistent
+    username: sa
+    password: uself
+    driverClassName: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+   # database-platform: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+    bootstrap-mode: default
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        #dialect: org.hibernate.dialect.PostgreSQLDialect
+        org:
+          hibernate:
+            dialect:
+        use_sql_comments: true
+        format_sql: true
+        lob:
+          non_contextual_creation: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    defer-datasource-initialization: true
+#    bootstrap-mode: default
+#    open-in-view: false
+#    show-sql: false
+
+#    hibernate:
+#      ddl-auto: create-drop
+
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.H2Dialect
+#        use_sql_comments: true
+#        format_sql: true
+
+
+#springfox.documentation.swagger.v2.path: /open-api
+springdoc:
+  packagesToScan: com.eviden.bds.rd.uself.agent
+  pathsToMatch: /**
+  swagger-ui:
+    path: /
+
+logging.level.org.springframework.web: INFO
+logging.level.com.eviden: DEBUG
+

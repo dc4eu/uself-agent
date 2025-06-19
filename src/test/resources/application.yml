@@ -1,0 +1,85 @@
+
+server:
+  port: 8888
+
+#springfox.documentation.swagger.v2.path: /open-api
+springdoc:
+  packagesToScan: com.eviden.ari.uself.agent
+  pathsToMatch: /**
+  swagger-ui:
+    path: /
+
+master:
+    key:
+        kms: ""
+
+uself:
+  security:
+    basic:
+      username: uself-agent
+      password: uself-agent-password
+  version: v0.1.0
+  loadDir: data/
+  did:
+    # defining did method     DID_KEY_P256,   DID_JWK,  DID_WEB,    DID_EBSI_LEGAL_ENTITY
+    method: "DID_EBSI_LEGAL_ENTITY"
+  tir:
+#    id: did:ebsi:ztRoYyJNdGr8tmAtVh9cg9n
+#    sigkey: '{"kid": "5FN5QgR2jOw7QDqp_2GsRlzpAFib8l3UA34dFH7gY4I", "kty": "EC","alg":"ES256", "crv": "P-256","x": "53fxAncDcRfEW5R_mzgi80UrwG_R9elH1H3GORLKy0E","y": "HvK8UdAIUgm8G4TaLB6z2ChYxe6xT2AWy_QksZxAW6c", "d": "zApC4UwuFW6redzQwfPAnL39P6dki5uwDH7M505qcDc"}'
+#    ethkey: '{ "kid": "NDXx9cr3aWeAfE9kKgP1swvJbyOwhSVrITHcggADx2M","kty": "EC","alg":"ES256K","crv": "secp256k1","x": "pcFusq7ky9dKbnkgIX1XnVSGXbYPL7OOoJD5nxCMYzs","y": "gkkfSTrm4dEO3OatIsAyq0mkh9YU8b5VBvGdlU__buY","d": "maWxZMGHtCmisVVn7zow7yevSUsXS_zi5M5kSXnCNVc"}'
+
+    id: did:ebsi:zs75xsdhi6KqtaD9uC8Vk6B
+    sigKey: '{"kid":"iKOxJ0VnUkgO64QZbhaLDEBrLv7iWjjxOA6IXx9D6S4","alg":"ES256","kty":"EC","x":"2W2aXIBdlSA4a2qyvcxOQGIc7ldwjGuUcPqM7eNhtp4","y":"EYGAJstGgh1HvjKrA9g4UT_0RBCglksmi-Nq8oJld_M","crv":"P-256","d":"lYvVtnNkCuWR1TFlel-HRt3xfa-a1BVSdD3eXuA7CSE"}'
+    ethKey: '{"kid":"-MmicQnmffL89FyyDfZIJgUREcdujJqVeduwPYya_rs","alg":"ES256K","kty":"EC","x":"3rhAwALPm3EsCyzkyFU9PWsfFL-vMJOdV8M6Mfz_ZlA","y":"cnQD3SsrqZbGPpWZEf4KdH31KQviMXrqCbnOT3nh8To","crv":"secp256k1","d":"WY3wxFiywlFVYNj9i5xrR2fdpIfVVV-jDJ-z_UmFo28"}'
+  # ebsiCredential, ebsiAccreditation, tango
+  preload: ebsiCredential, ebsiAccreditation, tango, dc4eu, cylcomed
+  server: http://localhost
+  authentic-source-url: http://uself-authentic-source
+  authentic-source-cylcomed-url:  http://uself-authentic-source
+  schemaExceptions: https://api-pilot.ebsi.eu/trusted-schemas-registry/v3/schemas/z5P8ebAhZjuvypiSXSHoba6vstbhTwnLhVuULWKenuiNJ
+  issuer: https://uself-file-server.dev5.ari-bip.eu
+  # keycloak localhost
+  openid-idp-server: http://uself-keycloak.local/realms/uself-realm
+  openid-client-id: uself-agent-client
+  openid-client-secret: 1Y9nCY1P41i6IHxgpia7TntyTcfDX78i
+  openid-client-gui: http://uself-agent-web:4200/present
+  openid-client-provider: uself
+  openid-client-token: http://keycloak:8080/realms/master/broker/uself/token
+
+  ebsiApis:
+    serverURL: https://api-conformance.ebsi.eu
+    didRegURL: https://api-conformance.ebsi.eu/did-registry/v5
+    trustedIssuersURL: https://api-conformance.ebsi.eu/trusted-issuers-registry/v5
+    ledgerURL: https://api-conformance.ebsi.eu/ledger/v4/blockchains/besu
+    identifiersURL: https://api-conformance.ebsi.eu/did-registry/v5/identifiers
+    issuerURL: https://api-conformance.ebsi.eu/conformance/v3/issuer-mock
+    authURL: https://api-conformance.ebsi.eu/conformance/v3/auth-mock
+    authzURL: https://api-conformance.ebsi.eu/authorisation/v4
+    presentationDefinitionURL: https://api-conformance.ebsi.eu/presentation-definitions
+    tokenURL: https://api-conformance.ebsi.eu/token
+    initiateURL: https://api-conformance.ebsi.eu/conformance/v3/issuer-mock/initiate-credential-offer
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6370
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    bootstrap-mode: default
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        use_sql_comments: true
+        format_sql: true
+

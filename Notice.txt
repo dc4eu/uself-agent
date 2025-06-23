@@ -1120,7 +1120,7 @@ Below are the required attributions for the components used by the software:
   - License: Apache-2.0
 
 ### uself-common
-  - Version:
+  - Version: v0.1.51
   - Publisher:: Organization: Atos Spain S.A.
   - License: Implementation License Agreement for R&D projects (ILARD)
 

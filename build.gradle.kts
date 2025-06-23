@@ -66,10 +66,7 @@ repositories {
     maven {
         name = "DC4EU"
         url = uri("https://ossdc4eu.urv.cat:8443/repository/DC4EU-maven/")
-//        credentials {
-//            username = "dc4eupa"
-//            password = "dc4eupa#"
-//        }
+
     }
 }
 // Use KSP Generated sources
@@ -82,15 +79,7 @@ sourceSets {
 jacoco {
     toolVersion = "0.8.11"
 }
-sonar {
-    properties {
-        properties["sonar.projectKey"] = "uself-agent"
-        properties["sonar.host.url"] = "https://sonari.atosresearch.eu"
-        properties["sonar.login"] = System.getProperty("TOKEN_SONAR")
-            ?: findProperty("LOCAL_TOKEN_SONAR").toString()
-        properties["sonar.coverage.exclusions"] = "**/com/eviden/bds/rd/uself/agent/models/**"
-    }
-}
+
 
 dependencies {
     // spring dependencies

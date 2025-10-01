@@ -1,0 +1,161 @@
+PARTIES
+
+LICENSOR: Atos Spain SA acting on its own behalf and its affiliates, successors and assigns (hereinafter “Atos” or “the Licensor”)
+
+"Licensee" refers to any natural or legal person who is granted authorization to access and utilize the Licensed Material exclusively for the purpose of executing tasks assigned within the Project, in accordance with the Grant Agreement, during the official duration of the Project. By accessing or using the Licensed Material, the Licensee acknowledges and agrees to be bound by the terms and conditions set forth in this Implementation License Agreement For R&D Projects (hereinafter ”ILARD”), thereby constituting acceptance of all obligations and responsibilities herein.
+
+Hereinafter referred to as “Parties“
+
+WHEREAS
+
+The Licensor and the Licensee have entered into Grant Agreement No. 101102611 (hereinafter, the “Grant Agreement”), which sets forth the rights, obligations, terms, and conditions governing the grant awarded for the Implementation of the action titled “DIGITAL CREDENTIALS FOR EUROPE“, identified as “DC4EU” (hereinafter, the “Project”). 
+
+The Licensor has identified certain software, known as the " Common Services for Issuer and Verifier“ including the following items (hereinafter “Licensed Material”):
+•	Trust model provider
+•	Crypto manager
+•	Issuer & Verifier manager
+•	Authentic source service
+•	VC specifications service
+•	Lifecycle manager (status, DID, Schema services).
+
+The Licensee hereby seeks to obtain specific Access Rights to the Licensed Material solely for purposes of Implementation within the scope of the Project, subject to the conditions set forth below. 
+
+1.	Scope
+
+1.1. The license terms apply to the Licensed Material. Any conflicting terms or conditions deviating from these license conditions will only be valid if expressly acknowledged and agreed to by the Licensor in writing.
+
+1.2. Definitions
+All capitalized terms have the meanings ascribed to them below or elsewhere in this ILARD and where not defined herein, they shall have the meaning defined in the Grant Agreement including its Annexes and if not defined there, then as defined in the Digital Europe Regulation.
+
+"Authorized Software Platform": an operating system platform and other required software programs on which the Software has been tested and approved by the Licensor.
+
+"Designated System" means the designated computer system, with an Authorized Software Platform on which the Licensee first installs the respective Software or, with respect to device-based Software, for which the Licensor has issued a license.
+
+"Documentation" means the technical and/or functional descriptions provided along with the Software. Documentation may be provided in electronic form or online, e.g. via the Internet. Documentation may also include, by example and without limitation, a description of performance characteristics, special features, hardware and software requirements, installation requirements, conditions of use and Licensee manuals. To the extent required by the respective Freeware vendor or OSS Licensor, if any, the Documentation also comprises of the applicable license terms for Freeware and the relevant OSS Licenses.
+
+“ILARD” means Implementation License Agreement For R&D Projects, that is, this license agreement.
+
+"Implementation" means the process of executing a plan or project to achieve its objectives and deliverables. In the context of this ILARD, it encompasses essential activities such as programming, testing, system integration, evaluation, and deployment.
+
+"Freeware" means a computer program which may be used without payment or other compensation (for example, by advertising). Freeware may be subject to proprietary license terms imposed by the Freeware vendor, which, by example and without limitation, may limit the right to distribute or redistribute the Freeware. Freeware may have functional limitations which a commercial version does not have. In general, the Freeware vendor does not deliver source code with the Freeware.
+
+Needed means, for the Implementation of the Project, that Access Rights are Needed if, without the grant of such Access Rights, carrying out the tasks assigned to the recipient Party or its Affiliates would be technically or legally impossible, significantly delayed, or require significant additional financial or human resource
+
+"Open-source License" or "OSS License" means, according to the Open-source Initiative, license terms for a computer program that, beyond the right to use the computer program without license-fee or royalty, grant the user rights that are usually reserved for the owner of the copyright, such as the right to modify the computer program, to merge it with other computer programs, or to distribute it or a modified version thereof, and which require that the following conditions are met: (a) the source code is either included or made easily available for free; (b) the license allows modifications and derived works, which can be distributed under the same terms as the original software; (c) the license does not discriminate against any person or group, nor restrict anyone from using the software in any specific field of endeavor; (d) the rights attached to the software apply to all recipients without the need for an additional license; (e) the license is not specific to a product, meaning the rights do not depend on the software being part of a particular distribution; (f) the license does not place restrictions on other software distributed alongside it, ensuring compatibility and interoperability; and (g) the license is technology-neutral, meaning no provision of the license can be based on any individual technology or style of interface
+
+"Open-Source Software" or "OSS" means a computer program licensed under an OSS License which is available either (a) in source code form only, or (b) where the source code is delivered together with the object code (executable) or (c) where the source code can be obtained for free (handling fee/ shipping costs may apply).
+
+"Software" means a software program being sequences of instructions to carry out a process in, or convertible into, a form executable by a computer, and fixed in any tangible medium of expression.
+
+"Specifications": the official document issued by the Licensor containing the technical specifications of Software, consisting of the corresponding release note provided as part of the Documentation.
+
+"Upgrade": Changes to the Software that include additional functionality, which are reflected in the change of the corresponding Specifications and lead to a new version.
+
+"Version": Software generally provided by the Licensor, which has the functionality specified in the Specifications of the Version and which is operated on a specific Authorized Software Platform.
+
+2.	 Grant of License
+
+The Licensor hereby grants the Licensee for the duration of the Project a royalty free, non-transferable, non-exclusive and revocable license to access the Licensed Material, exclusively in object code on a Designated System, solely for the purpose of performing necessary tasks directly related to the Implementation of the Project, and subject to the conditions outlined in this ILARD. For the avoidance of doubt, if the Licensed Material is composed of several items, the Licensee is only authorized to access those that are Needed for such purpose.
+
+This ILARD and any rights of use granted under this ILARD shall under no circumstances be construed as a sale of intellectual property rights or as a transfer of ownership of rights in the Licensed Material.
+
+3.	 Terms of use and restrictions
+
+3.1	Use of Licensor licenses
+
+The Licensee agrees to abide by the following terms and conditions of use of the Licensed Material:
+
+(a) The Licensee may not sell, transfer or otherwise make available the Licensed Material in any other way without the prior written consent of the Licensor.
+
+(b) The Licensee must, in any case, safeguard and protect all Licensed Material with the same care that the Licensee applies for the protection of his own intellectual property rights, but in no case less than reasonable care.
+
+(c) The Licensee may not modify, reverse engineer, disassemble, decompile or otherwise reduce the Licensed Material to a human perceivable form or permit any other to do so. Any such action by the Licensee, their employees, consultants, agents or contractors shall result in the ILARD being terminated without any other formality. The Licensee is in any case obligated to keep, when available, the references to available copyrights and other proprietary rights as well as serial numbers and other features of the Licensed Material, which serve as identification of the Licensed Material, unchanged.
+
+(d) The Licensee may not reproduce or copy the Licensed Material in any manner whatsoever except to the extent permitted to use the Licensed Material on a Designated System in accordance with the rights granted and to make only the number backup copies of the Licensed Material as strictly considered required to ensure its availability during the duration of the Project.
+
+(e) The fulfillment of the ILARD by the Licensor is subject to the condition that the fulfilment does not conflict with any obstacles based on national or international regulations of foreign trade law, embargoes and / or other sanctions.
+
+3.2	Use of third-party licenses
+
+(a) If Open-Source Software is incorporated into or used in conjunction with the Licensed Material, the conditions of license governing the respective Open-Source Software apply in priority to Section 3.1 for these Software components. Insofar as these license conditions provide for the publication of the source code, the Licensor will make this available at the request of the Licensee or any 3rd party making such request, insofar as required, though an Internet link whenever possible, or otherwise through another channel (against the corresponding reimbursement of expenses if applicable). The use of Open-Source Software, if any, is explicitly stated in the respective license.
+
+(b) To the extent Licensed Material include software programs from various Licensor Suppliers, such Suppliers are third party beneficiaries of this ILARD and may enforce this ILARD directly with the Licensee. 
+
+The use of third-party Software is explicitly stated in the respective license or in a Software Bill of Materials file or equivalent.
+
+4.	 Duties of the Licensee
+
+4.1	The Licensee has sole responsibility for compliance with the terms of use of the Licensed Material; this includes, but is not limited to, the decision as to whether the Licensed Material is appropriate for the Licensee's Authorized Software Platform, Designated System or any associated information systems or requirements, the introduction of appropriate data protection procedures, and the implementation of procedures to meet Licensee security requirements. Licensor therefore does not warrant any fitness-for-purpose.
+
+4.2	The proper data backup is the responsibility of the Licensee. Proper data protection includes all technical and / or organizational measures that enable the state of the systems, data, software products and / or procedures to be restored in the short-term and with little effort once an operational readiness has deteriorated.
+
+5.	 Infringement Acknowledgement
+
+In respect of the Licensed Material, no warranty or representation of any kind is made, given or implied as to the absence of any infringement of any proprietary rights of third parties. 
+
+Therefore, 
+•	the Licensee shall in all cases be entirely and solely liable for the use to which it puts such Licensed Material, and
+•	the Licensor shall not be liable vis-à-vis the Licensee in case of infringement of proprietary rights of a third party resulting from the Licensee exercising its Access Rights.
+
+6.	Termination of ILARD
+
+The Licensor may, in its sole and absolute discretion, at any time and for any or no reason, suspend or terminate this ILARD and the rights granted to the Licensee hereunder with or without prior notice, provided that such suspension or termination does not conflict with the provisions of the Grant Agreement. Furthermore, if the Licensee fails to comply with any terms and conditions of this ILARD, then this ILARD and any rights granted to the Licensee hereunder shall terminate automatically, without any notice of other action by the Licensor. Termination will also occur upon the termination of the Grant Agreement with the Licensee or the official termination date of the Project, whichever occurs first.
+
+6.1. Effects of termination
+
+Upon the termination of this ILARD, the Licensee shall cease all use of the Licensed Material and uninstall the Licensed Material, as well as destroy all copies of the Licensed Material and other (confidential, proprietary or other) Licensor information and certify the removal and destruction in writing to the Licensor, unless otherwise agreed by the Licensor in writing.
+
+
+
+7.	 Upgrades 
+
+Should the Licensor make any Upgrades to the Licensed Material available during the term of this ILARD, the Licensor and Licensee shall separately agree upon any additional terms, if applicable, for the Licensee to receive such Upgrade.
+
+The Licensee acknowledges and agrees that notwithstanding the foregoing, the Licensor is not obligated to make any Upgrades available
+
+8.	 Additional services
+
+At the written request of the Licensee, the Licensor may at its sole discretion provide "Professional Product Service" in terms and conditions to be agreed with the Licensee.
+
+9.	 Warranty, Liability and Indemnification of the Licensor
+
+The Licensee acknowledges and agrees that the licensed material is provided on an “as is” and “as available” basis, and that the Licensee´s use of or reliance upon the Licensed Material and any third party content and services accessed thereby is at his sole risk and discretion.
+
+Under the terms of this ILARD, the Licensor shall not be liable to the Licensee or any third party for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, loss of data, business interruption, or any other commercial damages or losses, nor for any failure by the Licensee or any third party to comply with any obligations under the DC4EU or any related agreements, arising out of or related to the use of the Licensed Material. 
+
+The Licensor shall have no obligation to indemnify the Licensee or any third party for any claims or damages arising from the use of the Licensed Material.
+
+These limitations shall apply to the fullest extent permitted by the Grant Agreement and the applicable law and shall survive the termination or expiration of this ILARD.
+
+10.	Export Control
+
+10.1	Licensor obligations under this ILARD are subject to the proviso that their fulfillment is not prevented by any impediments arising out of national and international foreign trade and customs requirements or any embargos or other sanctions. 
+
+10.2	The Licensee shall comply with all national and international export/re-export control restrictions applicable to the Licensed Material. In particular, the Licensee shall not, directly or indirectly, export, re-export, or transship the Licensed Material in violation of any export laws, rules, restrictions or regulations of the European Union or the United States of America.
+
+11.	General terms
+
+11.1	If individual terms of this ILARD are found to be legally ineffective or impracticable on legal grounds, the remaining terms shall not be affected thereby. The Parties will conclude an agreement that will cause the ineffective or impractical term to be replaced by a term that is as equivalent.
+
+11.2	Subsidiary agreements, specific agreements and other amendments to the content of this ILARD must be made in writing. This also applies to any waiver of this written form requirement.
+
+11.3	This ILARD is governed by by the EU laws as well as laws of Belgium under exclusion of the conflict of laws provisions. 
+
+11.4	The place of jurisdiction shall be Brussels.
+
+12.	Effects of this ILARD
+
+The Licensor is entitled to amend and /or supplement the content of this ILARD for the Licensed Material at any time with a reasonable notice period, whereby the overall functionality substantially remains maintained.
+
+The Licensor shall notify the Licensee of any changes or additions to the ILARD by providing the amended version of the Terms of Use. The notification shall clearly highlight the announced changes and reference them as a 'Change Notice’.
+
+If the Licensee does not object to the amended version of the ILARD or amended version of related agreements within 6 weeks of their receipt, such non-objection shall be deemed as the Licensee's consent to the validity of the amendments.
+
+With the publication of this ILARD, all previous versions loose validity. If the Licensee denies the consent, the ILARD will remain unchanged; however, it is therefore considered that the ILARD will early terminate without further notice after 30 days following the end of the 6 weeks term mentioned earlier.
+
+13.	ILARD Version and Date:
+
+ILARD Version: 1.0
+
+Date of Publication:  Jun 19, 2025
+MPLEMENTATION LICENSE AGREEMENT FOR R&D PROJECTS (ILARD)

@@ -149,3 +149,6 @@ sequenceDiagram
 Further information about the details of the implementation can be found in the [uSelf Agent documentation](https://uself-agent.readthedocs.io/en/latest/).
 ## License
 * [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+  
+This software contains some depencies with other libraries detailed within the Notice.txt file which also includes the license texts. 

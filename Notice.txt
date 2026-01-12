@@ -1,6 +1,6 @@
 NOTICE
 
-uself-agent - Version: v0.4.11
+  uself-agent - Version: v0.4.11
 
 Copyright (C) 2024-2025 Atos Spain S.A. All rights reserved.
 
